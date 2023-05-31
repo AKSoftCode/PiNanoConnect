@@ -1,0 +1,55 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Controller.HMI.Server";
+
+
+service ControllerCommsAPIService { 
+	rpc GetPing (google.protobuf.Empty) returns (PingReply); 
+	rpc GetDeviceParams (google.protobuf.Empty) returns (stream ParameterPack); 
+	rpc GetAlarms (google.protobuf.Empty) returns (stream Alarm); 
+	rpc GetSettings(google.protobuf.Empty) returns (Settings); 
+} 
+
+message PingReply {
+	bool IsServerAlive = 1;
+}
+
+message AnalogValues {
+	double value = 1;
+}
+
+message DeviceState {
+
+	bool ParamState1 = 1;
+	bool ParamState2 = 2;
+	bool ParamState3 = 3;
+	bool ParamState4 = 4;
+
+	bool ParamState5 = 5;
+	bool ParamState6 = 6;
+	bool ParamState7 = 7;
+	bool ParamState8 = 8;
+    bool ParamState9 = 9;
+    bool ParamState10 = 10;
+	bool ParamState11 = 11;
+    bool ParamState12 = 12;
+}
+
+message CommandState {
+	bool On = 1;
+}
+
+
+message ParameterPack {  
+	double ParamAnalogVal1 = 1;
+	double ParamAnalogVal2 = 2;
+	double ParamAnalogVal3 = 3;
+	DeviceState deviceState = 4;
+}
+
+message Alarm {  
+	string message = 1;
+	string type = 2;
+	int32 severity = 3;
+}

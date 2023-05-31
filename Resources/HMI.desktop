@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Controller
+Comment=Controller Application
+Exec=bash -c 'sh $HOME/Controller/Controller.sh;$SHELL'
+Icon=/usr/share/icons/Humanity/apps/32/access.svg
+Terminal=true
+Type=Application
+Categories=Utility;Development;

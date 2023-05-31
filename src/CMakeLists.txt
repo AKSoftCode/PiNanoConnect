@@ -1,0 +1,6 @@
+add_subdirectory(Controller.Common)
+add_subdirectory(Controller)
+add_subdirectory(Controller.DeviceInterface)
+add_subdirectory(Controller.Server)
+add_subdirectory(Controller.Model)
+add_subdirectory(Controller.DataAccess)

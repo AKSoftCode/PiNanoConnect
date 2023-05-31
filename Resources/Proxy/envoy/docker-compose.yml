@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  envoy:
+    image: envoyproxy/envoy:v1.16.0
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./envoy_win.yaml:/etc/envoy/envoy.yaml

@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Setup Controller
+Comment=Controller Setup
+Exec=bash -c 'sh $HOME/Controller/SetupController.sh;$SHELL'
+Icon=computer
+Terminal=true
+Type=Application
+Categories=Network;Internet;Utilities;Administration;Settings;
+

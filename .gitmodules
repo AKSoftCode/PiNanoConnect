@@ -1,0 +1,18 @@
+[submodule "lib/vcpkg"]
+	path = lib/vcpkg
+	url = https://github.com/Microsoft/vcpkg.git
+[submodule "lib/delegate"]
+	path = lib/delegate
+	url = https://github.com/oktonion/Cpp-fast-delegates
+[submodule "lib/ini-parser"]
+	path = lib/ini-parser
+	url = https://github.com/c-ridgway/cpp-feather-ini-parser
+[submodule "lib/libsetila"]
+	path = lib/libsetila
+	url = https://github.com/positronic57/libsetila
+[submodule "lib/spdlog"]
+	path = lib/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "lib/ABElectronics"]
+	path = lib/ABElectronics
+	url = https://github.com/abelectronicsuk/ABElectronics_CPP_Libraries.git
