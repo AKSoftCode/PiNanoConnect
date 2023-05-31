@@ -3,8 +3,8 @@
 cd $HOME/Controller
 
 sudo kill $(ps aux | grep '[L]aunchController*' | awk '{print $2}')
-sudo kill $(ps aux | grep '[G]loveBox.HMI.Server*' | awk '{print $2}')
-sudo kill $(ps aux | grep '[G]loveBox.Server*' | awk '{print $2}')
+sudo kill $(ps aux | grep '[C]ontroller.HMI.Server*' | awk '{print $2}')
+sudo kill $(ps aux | grep '[C]ontroller.Server*' | awk '{print $2}')
 
 ./LaunchControllerServer.sh  > OutServer.txt &
 
