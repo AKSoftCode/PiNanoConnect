@@ -1,4 +1,4 @@
-# Controller.Server
+# PiNanoConnect: Centralized Control for Remote Devices
 
 This repository contains the source code for the Control Software for Raspberry Pi and Jetson Nano. It is a software application that allows users to control various devices or systems remotely via gRPC.
 
