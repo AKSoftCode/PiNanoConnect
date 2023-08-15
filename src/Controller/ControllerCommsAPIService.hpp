@@ -35,5 +35,5 @@ public:
     virtual Status GetPing(ServerContext* context, const ::google::protobuf::Empty* request, ::PingReply* response);
     virtual Status GetDeviceParams(ServerContext* context, const ::google::protobuf::Empty* request, ServerWriter< ::ParameterPack>* writer) override ;
     virtual Status GetAlarms(ServerContext* context, const ::google::protobuf::Empty* request, ServerWriter< ::Alarm>* writer) override ;
-    virtual Status GetSettings(ServerContext* context, const ::google::protobuf::Empty* request, ::Settings* response) override ;
+    //virtual Status GetSettings(ServerContext* context, const ::google::protobuf::Empty* request, ::Settings* response) override ;
 };

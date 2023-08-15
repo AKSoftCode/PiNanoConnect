@@ -8,7 +8,6 @@ service ControllerCommsAPIService {
 	rpc GetPing (google.protobuf.Empty) returns (PingReply); 
 	rpc GetDeviceParams (google.protobuf.Empty) returns (stream ParameterPack); 
 	rpc GetAlarms (google.protobuf.Empty) returns (stream Alarm); 
-	rpc GetSettings(google.protobuf.Empty) returns (Settings); 
 } 
 
 message PingReply {
