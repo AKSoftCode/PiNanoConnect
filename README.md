@@ -29,11 +29,15 @@ This repository contains the source code for the Control Software for Raspberry 
    cmake ..
    ```
 
+3. You can also use CMakeSettings.json file to build the project on Visual Studio.
+   
 Note: You can set the device from Controller.DeviceInterface.
-```bash   
-option(JETSON_NANO_HOST "Use Jetson GPIO" ON)
- ```
-Default is Jetson Nano device. These plugins go to the plugin folder in the output directory. If any device plugin is not present, then copy the simulation library into the plugin directory to load it into simulation mode.
+      ```bash   
+      option(JETSON_NANO_HOST "Use Jetson GPIO" ON)
+      ```
+       
+   Default is Jetson Nano device. These plugins go to the plugin folder in the output directory. If any         device plugin is not present, then copy the simulation library into the plugin directory to load it 
+   into simulation mode.
 
 
 
